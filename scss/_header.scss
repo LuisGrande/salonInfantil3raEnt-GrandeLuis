@@ -1,0 +1,76 @@
+.header{
+    
+    .navbar{
+        height: 120px;
+        width: 100%;
+        position: sticky;
+        box-shadow: 1px -1px 35px -2px #000000;
+        top: 0;
+        background: linear-gradient(120deg, #FFFFFF, #6DD5FA, #2980B9);
+        @include mediaQuery(md){
+            flex-direction: row;
+            justify-content: space-around;
+            height: 85px;
+        }
+        .nav-logo{
+            display: flex;
+            justify-content: center;
+            // width: 100px;
+            width: 75px;
+            height: auto;
+            border-radius: 50%;
+            padding: 8px;
+            margin: 5px;
+            transition: box-shadow .3s ease-in-out;
+            @include mediaQuery(md){
+                margin: 5px;
+            };
+            img{
+                width: 40px;
+            }
+            &:hover{
+                box-shadow: 0px 10px 15px 1px rgba(0, 0, 0, 0.247);
+            }
+            ul{
+                
+                }
+        }
+        &-nav{
+            background: linear-gradient(120deg, #FFFFFF, #6DD5FA, #2980B9);
+            li{
+                text-decoration: none;
+                color: #273463;
+                font-size: 18px;
+                padding: 2px; 
+                border-radius: 6px;
+                margin: 5px;
+                transition: all .3s ease-in-out;
+                &:hover{
+                    box-shadow: 0px 10px 15px 1px rgba(0, 0, 0, 0.247);
+                }
+                .nav-item{
+                    a{
+                        transition: all .5s ease-in-out;
+                        &:hover{
+                            border-bottom: #273463 !important;
+                        }
+                    }
+                }
+            }
+            @include mediaQuery(lg){
+                // background: linear-gradient(120deg, #FFFFFF, #6DD5FA, #2980B9);
+                background: transparent;
+            }
+        }
+    }
+    
+    // banner
+    .banner{
+        @extend %estiloBanner;
+        background: linear-gradient(to right, hsla(121, 40%, 45%, 0.507), hsla(227, 54%, 34%, 0.507)),url(../img/img1.jpg);
+    }
+}
+
+
+
+

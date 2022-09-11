@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
+
+.header .navbar {
+  height: 120px;
+  width: 100%;
+  position: sticky;
+  box-shadow: 1px -1px 35px -2px #000000;
+  top: 0;
+  background: linear-gradient(120deg, #FFFFFF, #6DD5FA, #2980B9); }
+  @media (min-width: 768px) {
+    .header .navbar {
+      flex-direction: row;
+      justify-content: space-around;
+      height: 85px; } }
+  .header .navbar .nav-logo {
+    display: flex;
+    justify-content: center;
+    width: 75px;
+    height: auto;
+    border-radius: 50%;
+    padding: 8px;
+    margin: 5px;
+    transition: box-shadow .3s ease-in-out; }
+    @media (min-width: 768px) {
+      .header .navbar .nav-logo {
+        margin: 5px; } }
+    .header .navbar .nav-logo img {
+      width: 40px; }
+    .header .navbar .nav-logo:hover {
+      box-shadow: 0px 10px 15px 1px rgba(0, 0, 0, 0.247); }
+  .header .navbar-nav {
+    background: linear-gradient(120deg, #FFFFFF, #6DD5FA, #2980B9); }
+    .header .navbar-nav li {
+      text-decoration: none;
+      color: #273463;
+      font-size: 18px;
+      padding: 2px;
+      border-radius: 6px;
+      margin: 5px;
+      transition: all .3s ease-in-out; }
+      .header .navbar-nav li:hover {
+        box-shadow: 0px 10px 15px 1px rgba(0, 0, 0, 0.247); }
+      .header .navbar-nav li .nav-item a {
+        transition: all .5s ease-in-out; }
+        .header .navbar-nav li .nav-item a:hover {
+          border-bottom: #273463 !important; }
+    @media (min-width: 992px) {
+      .header .navbar-nav {
+        background: transparent; } }
+
+.header .banner {
+  background: linear-gradient(to right, rgba(69, 161, 70, 0.507), rgba(40, 60, 134, 0.507)), url(../img/img1.jpg); }
+
+.header .banner {
+  height: 50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  .header .banner h1 {
+    padding-top: calc(25vh - 80px);
+    text-align: center;
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase; }
+  .header .banner p {
+    text-align: center;
+    color: white; }

@@ -1,0 +1,22 @@
+%estiloBanner{
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    h1{
+        padding-top: calc(25vh - 80px);
+        text-align: center;
+        color: white;
+        font-weight: 800;
+        text-transform: uppercase; 
+    }
+    p{
+        text-align: center;
+        color: white;
+    } 
+}
+
+
+@mixin fondoBanner ($imagen){
+    background: linear-gradient(to right, hsla(121, 40%, 45%, 0.507), hsla(227, 54%, 34%, 0.507)),url($imagen);
+}
