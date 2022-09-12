@@ -9,6 +9,15 @@ body{
         "seccion2"
         "seccion3"
         "seccion4";
+        // media query
+        @include mediaQuery(lg){
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(3,auto);
+            grid-template-areas:
+            "seccion1 seccion1"
+            "seccion2 seccion2"
+            "seccion3 seccion4"
+        }
     }
         // seccion 1 - cards
         .seccion1 {
@@ -19,6 +28,7 @@ body{
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            
 
             .card{
                 min-width: 200px;

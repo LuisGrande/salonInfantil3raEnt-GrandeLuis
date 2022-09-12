@@ -111,6 +111,11 @@ body .contenido-index {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, auto);
   grid-template-areas: "seccion1" "seccion2" "seccion3" "seccion4"; }
+  @media (min-width: 992px) {
+    body .contenido-index {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(3, auto);
+      grid-template-areas: "seccion1 seccion1" "seccion2 seccion2" "seccion3 seccion4"; } }
 
 body .seccion1 {
   grid-area: seccion1;
@@ -209,3 +214,65 @@ body .seccion4 {
       margin: 10px auto;
       width: 100%;
       object-fit: scale-down; }
+
+.navbar_opciones {
+  position: sticky;
+  top: 5px;
+  height: 50px;
+  width: 100%; }
+  .navbar_opciones .ul_opciones {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    width: 100%; }
+    @media (min-width: 768px) {
+      .navbar_opciones .ul_opciones {
+        flex-direction: row;
+        justify-content: space-around; } }
+    @media (min-width: 992px) {
+      .navbar_opciones .ul_opciones {
+        flex-direction: row; } }
+    .navbar_opciones .ul_opciones li {
+      background: linear-gradient(120deg, rgba(255, 255, 255, 0.486), rgba(107, 212, 250, 0.322), rgba(40, 127, 184, 0.301));
+      border-radius: 6px;
+      margin: 2px auto;
+      width: 80%;
+      display: flex;
+      justify-content: center; }
+      @media (min-width: 768px) {
+        .navbar_opciones .ul_opciones li {
+          margin: 7px; } }
+      .navbar_opciones .ul_opciones li a {
+        text-decoration: none;
+        text-transform: capitalize;
+        padding: 7px;
+        margin: 0 auto;
+        transition: all .4s ease;
+        font-size: 13px;
+        color: #080707;
+        word-spacing: 10px; }
+        .navbar_opciones .ul_opciones li a:hover {
+          color: rgba(255, 255, 255, 0.452); }
+
+.paquetes_contenedor {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  width: 70%; }
+  .paquetes_contenedor .paquetes_info {
+    display: flex;
+    flex-direction: column;
+    padding: 70px 0; }
+    @media (min-width: 992px) {
+      .paquetes_contenedor .paquetes_info {
+        display: flex;
+        flex-direction: row;
+        padding: 70px 0; } }
+    .paquetes_contenedor .paquetes_info .picture {
+      flex-basis: 50%; }
+      .paquetes_contenedor .paquetes_info .picture img {
+        height: 100px; }
+    .paquetes_contenedor .paquetes_info .info_contenido {
+      flex-basis: 50%; }
