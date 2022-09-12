@@ -61,6 +61,30 @@ body {
 .header .banner {
   background: linear-gradient(to right, rgba(69, 161, 70, 0.507), rgba(40, 60, 134, 0.507)), url(../img/img1.jpg); }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to top, #000000, rgba(30, 32, 30, 0.801), transparent);
+  color: white;
+  min-height: 200px;
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around; }
+  @media (min-width: 768px) {
+    .footer {
+      flex-direction: row; } }
+  .footer_text {
+    margin-bottom: 15px; }
+  .footer .derecha .social {
+    margin-top: 20px; }
+    .footer .derecha .social a {
+      padding: 5px 10px;
+      color: white;
+      font-size: 28px; }
+      .footer .derecha .social a:hover {
+        color: rgba(30, 32, 30, 0.801); }
+
 .header .banner {
   height: 50vh;
   background-size: cover;
@@ -75,6 +99,12 @@ body {
   .header .banner p {
     text-align: center;
     color: white; }
+
+.footer .izquierda, .footer .derecha {
+  flex-basis: 50%;
+  padding: 10px 20px;
+  text-align: center;
+  color: white; }
 
 body .contenido-index {
   display: grid;
